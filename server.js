@@ -19,9 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get("/", function (req, res) {
-  return res.send(
-    "<h1 style=color:red>HELLO FROM NAVNEET</h1><br/><h3 style=color:green>YOU CAN VISIT MY SITE BELOW</h3><br/><a style=color:blue href='https://navneet-aneja.netlify.app'>CLICK HERE</a>"
-  );
+  return res.redirect("https://navneet-aneja.netlify.app");
 });
 
 const checkEmpty = (prop) => {
